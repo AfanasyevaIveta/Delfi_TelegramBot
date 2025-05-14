@@ -14,14 +14,14 @@ Izstrādāt automatizētu programmu Python valodā, kas:
 - _nest_asyncio_ - 
 # Projekta struktūra
 Delfi_TelegramBot
-_main.py_ - Galvenais programmas fails
-_state.json_ - Saglabā pēdējo nosūtīto ziņu ID
-_subcribers.json_ - Saglabā Telegram lietotāju ID, kuri pierakstījušies
-_README.md_ - Projekta apraksts
+- _main.py_ - Galvenais programmas fails
+- _state.json_ - Saglabā pēdējo nosūtīto ziņu ID
+- _subcribers.json_ - Saglabā Telegram lietotāju ID, kuri pierakstījušies
+- _README.md_ - Projekta apraksts
 # Datu Struktūras
-_state.json_ satur pēdējās nosūtītās ziņas ID, lai izvairītos no atkārtotas ziņošanas
-_subscribers.json_ - satur sarakstu ar chat_id visiem pierakstītajiem lietotājiem
-Ziņas tiek formatētas kā HTML ziņojumi, izmantojot _ParseMode.HTML_
+- _state.json_ satur pēdējās nosūtītās ziņas ID, lai izvairītos no atkārtotas ziņošanas
+- _subscribers.json_ - satur sarakstu ar chat_id visiem pierakstītajiem lietotājiem
+- Ziņas tiek formatētas kā HTML ziņojumi, izmantojot _ParseMode.HTML_
 # Komandas
 /start - Pierakstīties jaunu ziņu saņemšanai
 /stop - Atteikties no ziņojumu saņemšanas
