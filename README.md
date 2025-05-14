@@ -13,11 +13,11 @@ Izstrādāt automatizētu programmu Python valodā, kas:
 - _json_ - Lietotāju un pēdējās ziņas datu saglabāšana
 - _nest_asyncio_ - Nodrošina, ka viss darbojas arī Windows un citās vidēs, kur jau ir aktīvs event loop
 # Projekta struktūra
-Delfi_TelegramBot
-- _main.py_ - Galvenais programmas fails
-- _state.json_ - Saglabā pēdējo nosūtīto ziņu ID
-- _subcribers.json_ - Saglabā Telegram lietotāju ID, kuri pierakstījušies
-- _README.md_ - Projekta apraksts
+Delfi_TelegramBot <br>
+_main.py_ - Galvenais programmas fails <br>
+_state.json_ - Saglabā pēdējo nosūtīto ziņu ID <br>
+_subcribers.json_ - Saglabā Telegram lietotāju ID, kuri pierakstījušies <br>
+_README.md_ - Projekta apraksts
 # Datu Struktūras
 - _state.json_ satur pēdējās nosūtītās ziņas ID, lai izvairītos no atkārtotas ziņošanas
 - _subscribers.json_ - satur sarakstu ar chat_id visiem pierakstītajiem lietotājiem
@@ -25,3 +25,11 @@ Delfi_TelegramBot
 # Komandas
 - /start - Pierakstīties jaunu ziņu saņemšanai
 - /stop - Atteikties no ziņojumu saņemšanas
+# Kā darbojas
+Bots pārbauda RSS plūsmu reizi minūtē (katras 60 sekundes). Ja tiek atrasta jauna ziņa, tās virsraksts, datums un saite tiek nosūtīta visiem lietotājiem, kas ir pierakstījušies. <br>
+Ziņas ID tiek saglabāts failā _state.json_, lai nākamajā reizē tā netiktu nosūtīta atkārtoti. Visi lietotāji, kas nosūtījuši _/start_, tiek ierakstīti failā _subscribers.json_.
+# Kopsapvilkums
+Projektā tika iegūtas:
+- darbs ar RSS arējiem datu avotiem
+- asinhronas programmas darbība
+- datu uzglābšana JSON formātā
