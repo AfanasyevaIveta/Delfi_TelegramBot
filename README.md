@@ -23,5 +23,5 @@ Delfi_TelegramBot
 - _subscribers.json_ - satur sarakstu ar chat_id visiem pierakstītajiem lietotājiem
 - Ziņas tiek formatētas kā HTML ziņojumi, izmantojot _ParseMode.HTML_
 # Komandas
-/start - Pierakstīties jaunu ziņu saņemšanai
-/stop - Atteikties no ziņojumu saņemšanas
+- /start - Pierakstīties jaunu ziņu saņemšanai
+- /stop - Atteikties no ziņojumu saņemšanas
