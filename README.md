@@ -11,7 +11,7 @@ Izstrādāt automatizētu programmu Python valodā, kas:
 - _python-telegram-bot_ - Telegram API izmantošana, ziņu sūtīšana un komandu apstrāde
 - _asyncio_ - Asinhronā darbība un cikliska pārbaude
 - _json_ - Lietotāju un pēdējās ziņas datu saglabāšana
-- _nest_asyncio_ - 
+- _nest_asyncio_ - Nodrošina, ka viss darbojas arī Windows un citās vidēs, kur jau ir aktīvs event loop
 # Projekta struktūra
 Delfi_TelegramBot
 - _main.py_ - Galvenais programmas fails
